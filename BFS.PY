@@ -12,12 +12,12 @@ def bfs_traversal(graph, node):
                 visited.append(i)
                 queue.append(i)
 
-graph = {
-  '5' : ['3','7'],
-  '3' : ['2', '4'],
-  '7' : ['8'],
-  '2' : [],
-  '4' : ['8'],
-  '8' : []
-}
-bfs_traversal(graph,'5')
+graph = {'1': ['3', '2'], 
+         '2': ['4', '5'], 
+         '3': ['4'], 
+         '4': ['6', '8'], 
+         '5' : ['6'], 
+         '6': ['7'], 
+         '7': ['8'], 
+         '8' : []}
+bfs_traversal(graph,'1')
